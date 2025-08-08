@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuck</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" type="image/png">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg bg-white half-screen py-3">
+      <div class="container-fluid">
+          <a class="navbar-brand me-4" href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" style="height:56px;">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              
+              <div class="offcanvas-header">
+                  <a class="navbar-brand offcanvas-title" id="offcanvasNavbarLabel" href="#">
+                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" style="height:56px;">
+                  </a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              
+              <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center p-4 p-lg-0">
+                  <ul class="navbar-nav flex-column flex-lg-row ">
+                      <li class="nav-item mb-3 mb-lg-0">
+                          <a class="nav-link tablink fw-bold fs-6 text-dark" onclick="openPage('Menu', this, 'white')" id="defaultOpen" href="#">MENU</a>
+                      </li>
+                      <li class="nav-item mb-3 mb-lg-0">
+                          <a class="nav-link tablink fw-bold fs-6 text-dark" onclick="openPage('Rewards', this, 'white')" href="#">REWARDS</a>
+                      </li>
+                      <li class="nav-item mb-3 mb-lg-0">
+                          <a class="nav-link tablink fw-bold fs-6 text-dark" onclick="openPage('GiftCards', this, 'white')" href="#">GIFT CARDS</a>
+                      </li>
+                  </ul>
+                  <hr class="d-lg-none border-bottom ">
+                  <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 Find-a-store ">
+                      <a href="#" class="dark px-3 d-flex align-items-center">
+                          <i class="bi bi-geo-alt me-2"></i> Find a store
+                      </a>
+                      <button class="btn btn-outline-dark rounded-pill px-4">Sign in</button>
+                      <button class="btn btn-dark rounded-pill px-4 fw-bold">Join now</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <div class="green-card">
+    <div class="container-fluid">
+      STARBUCKS® REWARDS
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid h-image" id="Rewards">
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6 mb-5 mb-md-0">
+      <h1 class="fw-bold mb-4">It's a great day for free coffee</h1>
+      <p class="mb-4 fs-5">Sign up and start enjoying the perks of Starbucks® Rewards.</p>
+
+      <button class="btn btn-success rounded-pill fw-bold px-4 py-2 mb-3 d-none d-md-inline-block">
+        Join online
+      </button>
+
+      <button class="btn btn-success rounded-pill fw-bold px-4 py-2 mb-3 d-inline-block d-md-none">
+        Join in the app
+      </button>
+
+      <p class="mt-3 text-dark d-none d-md-block">
+        It’s even better <a href="#">with the app</a>.
+      </p>
+
+      <p class="mt-3 text-dark d-block d-md-none">
+        or <a href="#">join online</a>.
+      </p>
+    </div>
+
+    
+    <div class="col-12 col-md-6 text-center">
+      <img
+        src="https://about.starbucks.com/uploads/2025/05/Starbucks-Iced-Shaken-Espresso-scaled.jpg"
+        alt="Coffee"
+        class="img-fluid"
+      >
+    </div>
+  </div>
+</div>
+
+  <div class="container py-5 txt-1-2-3" id="Rewards">
+  <div class="text-center mb-5">
+    <h3>Getting started is easy</h3>
+    <p>Earn Stars and get rewarded in a few easy steps.</p>
+  </div>
+
+  <div class="row gy-4">
+    
+    <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+      <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg" alt="1" style="width: 40px; height: 40px;" class="mb-3">
+      <h4>Create an account</h4>
+      <p class="mt-2 text-dark">
+        To get started, <a class="text-success" href="#">join now</a>. You can also 
+        <a class="text-success" href="#">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.
+      </p>
+    </div>
+
+    
+    <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+      <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-2@2x.jpg" alt="2" style="width: 40px; height: 40px;" class="mb-3">
+      <h4>Order and pay how you’d like</h4>
+      <p class="mt-2 text-dark">
+        Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. 
+        <a class="text-success" href="#">Learn how</a>
+      </p>
+    </div>
+
+    
+    <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+      <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-3@2x.jpg" alt="3" style="width: 40px; height: 40px;" class="mb-3">
+      <h4>Earn Stars, get Rewards</h4>
+      <p class="mt-2 text-dark">
+        As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid rewards-section" id="Rewards">
+    <h2 class="text-center">Get your favorites for free</h2>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'tab25')">25<span>★</span></button>
+      <button class="tablinks" onclick="openTab(event, 'tab100')">100<span>★</span></button>
+      <button class="tablinks" onclick="openTab(event, 'tab200')">200<span>★</span></button>
+      <button class="tablinks" onclick="openTab(event, 'tab300')">300<span>★</span></button>
+      <button class="tablinks" onclick="openTab(event, 'tab400')">400<span>★</span></button>
+    </div>
+
+    <div id="tab25" class="tabcontent">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/25.png" alt="25 Stars">
+      <div class="tabtext">
+        <h3>Customize your drink</h3>
+        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+      </div>
+    </div>
+
+    <div id="tab100" class="tabcontent">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png" alt="100 Stars">
+      <div class="tabtext">
+        <h3>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+        <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+      </div>
+    </div>
+
+    <div id="tab200" class="tabcontent">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png" alt="200 Stars">
+      <div class="tabtext">
+        <h3>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+        <p>Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
+      </div>
+    </div>
+
+    <div id="tab300" class="tabcontent">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/300.png" alt="300 Stars">
+      <div class="tabtext">
+        <h3>Lunch sandwich, protein box or salad</h3>
+        <p>Enjoy a hearty sandwich, protein box or salad—all on us.</p>
+      </div>
+    </div>
+
+    <div id="tab400" class="tabcontent">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png" alt="400 Stars">
+      <div class="tabtext">
+        <h3>Select Starbucks® merchandise</h3>
+        <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid mb-5 mt-5" id="Rewards">
+  <h2 class="text-center">Endless Extras</h2>
+  <p class="text-center">
+    Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering,<br>
+    tasty Rewards and—yes, free coffee.
+  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-4">
+        <img src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg" alt="Order Ahead" class="img-fluid mb-3">
+        <h4>Fun freebies</h4>
+        <p>Not only can you earn free food, drinks and more,<br> look forward to a birthday treat on us.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-4">
+        <img src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg" alt="Free Refills" class="img-fluid mb-3">
+        <h4>Order & pay ahead</h4>
+        <p>Master the art of ordering ahead with saved favorites <br>and payment methods.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-4">
+        <img src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg" alt="Birthday Reward" class="img-fluid mb-3">
+        <h4>Get to free faster</h4>
+        <p>Earn Stars even quicker with Bonus Star challenges,<br> Double Star Days and exciting games.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid my-5 bg-light" id="Rewards">
+  <div class="text-center mb-4">
+    <h3 class="mt-3 mb-3">Cash or card, you earn Stars</h3>
+    <p class="mt-3 mb-3">
+      No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to <br>
+      (really delicious) Rewards.
+    </p>
+  </div>
+
+  <div class="container mb-4">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <h3>1★ per dollar</h3>
+        <p>Pay as you go</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="d-flex align-items-start">
+          <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="Scan and pay" class="img-fluid" style="max-width: 60px;">
+          <div class="ms-3">
+            <strong>Scan and pay separately</strong>
+            <p class="mb-0">Use cash or credit/debit card at the register.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="d-flex align-items-start">
+          <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="Save payment" class="img-fluid" style="max-width: 60px;">
+          <div class="ms-3">
+            <strong>Save payment in the app</strong>
+            <p class="mb-0">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <h3>2★ per dollar</h3>
+        <p>Add funds in the app</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="d-flex align-items-start">
+          <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" alt="Preload" class="img-fluid" style="max-width: 60px;">
+          <div class="ms-3">
+            <strong>Preload</strong>
+            <p class="mb-0">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="d-flex align-items-start">
+          <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" alt="Register gift card" class="img-fluid" style="max-width: 60px;">
+          <div class="ms-3">
+            <strong>Register your gift card</strong>
+            <p class="mb-0">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<div class="background-wrapper mt-5">
+  <div class="container">
+    <div class="rewards-card text-center">
+
+      <h2 class="fw-bold">Keep the Rewards Coming</h2>
+      <p>
+        The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.
+      </p>
+
+      <div class="row mt-4 g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png" class="img-fluid reward-logo mb-3" alt="Delta SkyMiles">
+          <p>
+            <a href="#" class="text-success fw-bold">Link your Delta SkyMiles®</a> and Starbucks® Rewards accounts to earn miles on Starbucks Card reloads of $25 or more, plus Double Stars on travel days.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/bank-of-america.png" class="img-fluid reward-logo mb-3" alt="Bank of America">
+          <p>
+            <a href="#" class="text-success fw-bold">Link your Bank of America</a> eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/marriott-bonvoy/marriott-logo.png" class="img-fluid reward-logo mb-3" alt="Marriott Bonvoy">
+          <p>
+            <a href="#" class="text-success fw-bold">Link your Marriott Bonvoy®</a> and Starbucks® Rewards accounts to earn Double Stars during eligible stays, points during any Marriott Bonvoy Week and more.
+          </p>
+        </div>
+      </div>
+
+      <button class="btn join-btn mt-4 px-4 py-2 fw-bold">Join Starbucks® Rewards</button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container py-5">
+  <div class="px-3">
+    <h2 class="fw-bold mb-3">Questions?</h2>
+    <p class="mb-0">
+      We want to help in any way we can. You can ask your barista anytime or we’ve answered the
+      <br>most commonly asked terms
+      <a href="#" class="text-success fw-bold">right over here.</a>
+    </p>
+  </div>
+</div>
+
+  <div class="description">
+
+    <div>
+      <p>
+        At participating stores. Restrictions apply.
+      </p>
+      <p>
+        1Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit 
+        <a href="#">deltastarbucks.com/terms</a>
+        .↩
+      </p>
+      <p>
+        2At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For details, visit 
+        <a href="#">Terms and Conditions</a>
+        . Bank of America, N.A. Member FDIC.↩
+      </p>
+      <p>
+        3Individuals must link loyalty program accounts to participate in offer. Members with linked accounts will earn: (a) double Starbucks Rewards Stars on Qualifying Starbucks Transactions during Eligible Stays at Participating Marriott Bonvoy Hotels, excluding stays at Homes & Villas by Marriott Bonvoy and The Ritz-Carlton Yacht Collection, and (b) earn 100 Marriott Bonvoy Points upon completion of 3 Qualifying Starbucks Transactions during Marriott Bonvoy Week. Qualifying Starbucks Transactions must be made at U.S. participating Starbucks stores and exclude purchases of alcoholic beverages, Starbucks Card eGifts and physical Starbucks gift. To earn Double Stars, the applicable stay must qualify as an Eligible Stay at a Participating Marriott Bonvoy® Hotel under offer terms and conditions. Other restrictions and exclusions apply. For full offer terms and conditions, visit 
+        <a href="#">Starbucks.com/MarriottBonvoy</a>
+        . Marriott Bonvoy® and its affiliated brands and hotels are the registered trademarks and/or service marks of Marriott International, Inc. and its affiliates. Used under license from Marriott International, Inc.↩
+      </p>
+    </div class="mb-5">
+
+    <div class="row">
+      <div class="col-md-6">
+        <strong>EARNING STARTS</strong>
+        <P class="mt-3">Stars cannot be earned on purchases of alcohol, Starbucks Cards or Starbucks Card reloads.</P>
+        <P>Earn 1 Star per $1 spent when you scan your member barcode in the app, then pay with cash, credit/debit cards or mobile wallets at participating stores. You can also earn 1 Star per $1 spent when you link a payment method and pay directly through the app.</P>
+        <P>Earn 2 Stars per $1 spent when you load funds and pay with your digital Starbucks Card in the app. You can also earn 2 Stars per $1 spent when you pay in-person at a participating store with your registered physical Starbucks Card or scan your member barcode in the app, and then use any physical Starbucks Card (regardless of whether it is registered) to complete the purchase.</P>
+        <strong>BENEFITS</strong>
+        <P class="mt-3">Free refills available during same in-store visit only. To qualify for the Birthday Reward, you must have made at least one Star-earning transaction.</P>
+      </div>
+
+      <div class="col-md-6">
+        <strong>TERNS OF USE</strong>
+        <P class="mt-3">For full program detail visit</P>
+        <p><a href="">starbucks.com/rewards/terms</a></p>
+        <p>
+          Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the 
+          <a href="">Starbucks Store Locator</a>and search for locations honoring “Redeem Rewards”.
+        </p>
+        <strong>REDEEMING REWARDS</strong>
+        <p class="mt-3">Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <hr>
+    <div class="container py-5 ft-1">
+  <div class="row gy-4">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+      <h5>About Us</h5>
+      <a href="#" class="d-block">Our Company</a>
+      <a href="#" class="d-block">Our Coffee</a>
+      <a href="#" class="d-block">About Starbucks</a>
+      <a href="#" class="d-block">Starbucks Archive</a>
+      <a href="#" class="d-block">Investor Relations</a>
+      <a href="#" class="d-block">Customer Service</a>
+      <a href="#" class="d-block">Contact Us</a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+      <h5>Careers</h5>
+      <a href="#" class="d-block">Culture and Values</a>
+      <a href="#" class="d-block">Belonging at Starbucks</a>
+      <a href="#" class="d-block">College Achievement Plan</a>
+      <a href="#" class="d-block">Alumni Community</a>
+      <a href="#" class="d-block">U.S. Careers</a>
+      <a href="#" class="d-block">International Careers</a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+      <h5>Social Impact</h5>
+      <a href="#" class="d-block">Community</a>
+      <a href="#" class="d-block">Starbucks Foundation</a>
+      <a href="#" class="d-block">Sustainability</a>
+      <a href="#" class="d-block">Environmental & Social Impact Reporting</a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+      <h5>For Business Partners</h5>
+      <a href="#" class="d-block">Landlord Support Center</a>
+      <a href="#" class="d-block">Suppliers</a>
+      <a href="#" class="d-block">Corporate Gift Card Sales</a>
+      <a href="#" class="d-block">Office and Foodservice Coffee</a>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <h5>Order and Pick Up</h5>
+      <a href="#" class="d-block">Order on App</a>
+      <a href="#" class="d-block">Order on the Web</a>
+      <a href="#" class="d-block">Delivery</a>
+      <a href="#" class="d-block">Order and Pick Up Options</a>
+      <a href="#" class="d-block">Explore Coffee for Home</a>
+    </div>
+
+  </div>
+</div>
+<hr>
+
+    <div class="ft-2">
+      
+      <div class="social-icons">
+        <a href="#" class="icon"><i class="fab fa-spotify"></i></a>
+        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      <div class="private">
+        <a href="#">Privacy Notice</a>
+        <a href="#">Consumer health privacy Notice</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Do Not Share My Personal Information</a>
+        <a href="#">CA Supply Chain Act</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Cookie Preferences</a>
+        <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="javascrip.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
